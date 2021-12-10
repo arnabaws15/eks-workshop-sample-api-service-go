@@ -16,6 +16,7 @@ phases:
         - export KUBECONFIG=$HOME/.kube/config
   build:
     commands:
+      - docker -u arisin15 -p 06b53884-37ea-43c7-b27d-d904dd333fbd
       - docker build --tag $REPOSITORY_URI:$TAG .
 
   post_build:
